@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\acer\\cuc\\cuc.csproj": {}
+    "C:\\Users\\acer\\Downloads\\cuc\\cuc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\acer\\cuc\\cuc.csproj": {
+    "C:\\Users\\acer\\Downloads\\cuc\\cuc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\acer\\cuc\\cuc.csproj",
+        "projectUniqueName": "C:\\Users\\acer\\Downloads\\cuc\\cuc.csproj",
         "projectName": "cuc",
-        "projectPath": "C:\\Users\\acer\\cuc\\cuc.csproj",
+        "projectPath": "C:\\Users\\acer\\Downloads\\cuc\\cuc.csproj",
         "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\acer\\cuc\\obj\\",
+        "outputPath": "C:\\Users\\acer\\Downloads\\cuc\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

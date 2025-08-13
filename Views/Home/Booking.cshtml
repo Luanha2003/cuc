@@ -1,0 +1,56 @@
+@{
+    ViewData["Title"] = "Đặt Vé";
+}
+
+<div class="booking-container">
+    <h3>Đặt Vé Metro Trực Tuyến</h3>
+    
+    <div class="booking-form">
+        <div class="form-group">
+            <label for="origin">Ga đi:</label>
+            <select id="origin" class="form-control">
+                <option value="">-- Chọn ga đi --</option>
+                <option value="Ben Thanh">Bến Thành</option>
+                <option value="Nha hat Thanh pho">Nhà hát Thành phố</option>
+                <option value="Ba Son">Ba Son</option>
+                <option value="Cong vien Van Thanh">Công viên Văn Thánh</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="destination">Ga đến:</label>
+            <select id="destination" class="form-control">
+                <option value="">-- Chọn ga đến --</option>
+                <option value="Ben Thanh">Bến Thành</option>
+                <option value="Nha hat Thanh pho">Nhà hát Thành phố</option>
+                <option value="Ba Son">Ba Son</option>
+                <option value="Cong vien Van Thanh">Công viên Văn Thánh</option>
+            </select>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col">
+                <label for="trip-date">Ngày đi:</label>
+                <input type="date" id="trip-date" class="form-control" />
+            </div>
+            <div class="form-group col">
+                <label for="quantity">Số lượng vé:</label>
+                <input type="number" id="quantity" class="form-control" value="1" min="1" />
+            </div>
+        </div>
+        
+        <div class="price-summary">
+            <h4>Tổng tiền: <span id="total-price">0</span> VNĐ</h4>
+        </div>
+
+        <button id="submit-booking" class="btn btn-primary btn-lg btn-block">
+            Thanh Toán
+        </button>
+        
+        <div id="error-message" class="alert alert-danger mt-3" style="display:none;"></div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/booking.js" asp-append-version="true"></script>
+}
