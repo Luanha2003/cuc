@@ -1,8 +1,46 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Trang Chủ";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="hero-section text-center text-white">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1 class="display-4 fw-bold">Đặt Vé Metro Nhanh Chóng & Tiện Lợi</h1>
+        <p class="lead my-4">
+            Trải nghiệm hệ thống tàu điện ngầm hiện đại tại TP. Hồ Chí Minh. <br /> Mua vé dễ dàng chỉ với vài cú nhấp chuột.
+        </p>
+        <a class="btn btn-primary btn-lg" asp-controller="Home" asp-action="Booking">
+            <i class="fas fa-ticket-alt"></i> Đặt Vé Ngay
+        </a>
+    </div>
 </div>
+
+<div class="container mt-5">
+    <div class="row text-center">
+        <div class="col-md-4">
+            <div class="feature-icon mb-3">
+                <i class="fas fa-dollar-sign"></i>
+            </div>
+            <h3>Giá vé hợp lý</h3>
+            <p>Giá vé được tính toán tự động dựa trên lộ trình của bạn, chỉ từ 7,000 VNĐ.</p>
+        </div>
+        <div class="col-md-4">
+            <div class="feature-icon mb-3">
+                <i class="fas fa-subway"></i>
+            </div>
+            <h3>Mạng lưới rộng khắp</h3>
+            <p>Dễ dàng di chuyển giữa các địa điểm trung tâm của thành phố.</p>
+        </div>
+        <div class="col-md-4">
+            <div class="feature-icon mb-3">
+                <i class="fas fa-clock"></i>
+            </div>
+            <h3>Tiết kiệm thời gian</h3>
+            <p>Đặt vé online nhanh chóng, không cần xếp hàng chờ đợi tại ga.</p>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+}

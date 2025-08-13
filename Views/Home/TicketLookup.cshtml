@@ -1,0 +1,34 @@
+@{
+    ViewData["Title"] = "Tra Cứu Vé";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Tra Cứu Thông Tin Vé</h1>
+    <p class="lead">Vui lòng nhập mã vé của bạn để xem chi tiết.</p>
+</div>
+
+<div class="row justify-content-center mt-5">
+    <div class="col-md-6">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Nhập mã vé..." id="ticket-code">
+            <button class="btn btn-primary" type="button" id="lookup-btn">Tra Cứu</button>
+        </div>
+        <div id="lookup-result" class="mt-4">
+            </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.getElementById('lookup-btn').addEventListener('click', function() {
+            const ticketCode = document.getElementById('ticket-code').value;
+            const resultDiv = document.getElementById('lookup-result');
+
+            if (ticketCode) {
+                resultDiv.innerHTML = `<div class="alert alert-danger"><strong>Lỗi:</strong> Không tìm thấy vé với mã <strong>${ticketCode}</strong>. (Chức năng đang được phát triển).</div>`;
+            } else {
+                resultDiv.innerHTML = `<div class="alert alert-warning">Vui lòng nhập mã vé để tra cứu.</div>`;
+            }
+        });
+    </script>
+}

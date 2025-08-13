@@ -1,0 +1,30 @@
+@{
+    ViewData["Title"] = "Lộ Trình Tuyến Tàu";
+    var stations = new List<string> {
+        "Bến Thành", "Nhà hát Thành phố", "Ba Son", "Công viên Văn Thánh",
+        "Tân Cảng", "Thảo Điền", "An Phú", "Rạch Chiếc", "Phước Long",
+        "Bình Thái", "Thủ Đức", "Khu công nghệ cao", "Suối Tiên", "Đại học Quốc gia"
+    };
+}
+
+<div class="text-center">
+    <h1 class="display-4">Lộ Trình Tuyến Metro Số 1</h1>
+    <p class="lead">Bến Thành - Suối Tiên</p>
+</div>
+
+<div class="mt-5">
+    <ul class="list-group">
+        @foreach (var station in stations)
+        {
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <i class="fas fa-subway me-3 text-primary"></i>
+                @station
+                <span class="badge bg-primary rounded-pill">Ga số @(stations.IndexOf(station) + 1)</span>
+            </li>
+        }
+    </ul>
+</div>
+
+@section Scripts {
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+}

@@ -1,3 +1,4 @@
+/* === STYLE MẶC ĐỊNH === */
 html {
   font-size: 14px;
 }
@@ -28,4 +29,73 @@ body {
 
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
+}
+
+/* === CSS TÙY CHỈNH CHO TRANG ĐẶT VÉ METRO === */
+
+.booking-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.booking-container h3 {
+    text-align: center;
+    color: #0d6efd;
+    margin-bottom: 1.5rem;
+}
+
+.booking-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.price-summary {
+    text-align: right;
+    margin: 1.5rem 0;
+}
+
+.price-summary h4 {
+    font-weight: bold;
+    color: #28a745;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+/* === CSS CHO TRANG CHỦ MỚI === */
+
+.hero-section {
+    position: relative;
+    padding: 10rem 0;
+    background: url('https://images.unsplash.com/photo-1553531384-411a247ccd74?q=80&w=2070&auto=format&fit=crop') no-repeat center center;
+    background-size: cover;
+    margin: -1.75rem -1rem 0; /* Mở rộng banner ra sát lề */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: #0d6efd;
 }

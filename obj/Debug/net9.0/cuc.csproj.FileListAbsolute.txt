@@ -96,3 +96,4 @@ C:\Users\acer\Downloads\cuc\obj\Debug\net9.0\refint\cuc.dll
 C:\Users\acer\Downloads\cuc\obj\Debug\net9.0\cuc.pdb
 C:\Users\acer\Downloads\cuc\obj\Debug\net9.0\cuc.genruntimeconfig.cache
 C:\Users\acer\Downloads\cuc\obj\Debug\net9.0\ref\cuc.dll
+C:\Users\acer\Downloads\cuc\obj\Debug\net9.0\compressed\scjmak0s4r-5ipweew5fc.gz
